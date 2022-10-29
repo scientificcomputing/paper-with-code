@@ -1,0 +1,10 @@
+format: jb-book
+root: index
+
+chapters:
+  - file: structure.md
+  - file: data.md
+  - file: environment.md
+  - file: scripts.md
+  - file: documentation.md
+  - file: resources.md
