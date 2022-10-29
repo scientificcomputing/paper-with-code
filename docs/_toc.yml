@@ -6,5 +6,6 @@ chapters:
   - file: data.md
   - file: environment.md
   - file: scripts.md
+  - file: versioning.md
   - file: documentation.md
   - file: resources.md
