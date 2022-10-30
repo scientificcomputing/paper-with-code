@@ -21,3 +21,48 @@ Here the prefix `v` is meant to represent *version*. You can push that tags to G
 git push --tags
 ```
 It is good to set up a GitHub action that will build and deploy a [Docker image](environment.md) every time you push a tag to the repository. That way, you will be able to reproduce the environment for all the important versions of your code. 
+
+## Changelog
+It is also good practice to keep track of the changes you make between two version. You can do this by writing a [changelog](https://en.wikipedia.org/wiki/Changelog). You can write a markdown file called `CHANGELOG.md` with the following version
+
+```markdown
+# Changelog
+
+---
+
+## Final version
+- tag: `v_final`
+
+### Changes
+- Added figure 3.1
+- Rewritten section about ..
+
+---
+
+## Second submissin
+- tag: `v_second_submission`
+
+### Changes
+- Run new experiments
+    - Added descriptions in section 2.4
+    - Added results in Section 3.4
+- Change Table 2.1
+
+---
+
+## First submission
+- tag: `v_first_submission`
+
+
+---
+
+```
+Note that if you write descriptive commit messages you can use these messages in your changelog. For example to get all commit messages between the `v_first_submission` and `v_second_submission` tags you can e.g
+
+```bash
+git log --pretty=oneline v_first_submission...v_second_submission
+```
+If you need to get all commit messages from the very beginning to e.g `v_first_submission` you can do
+```bash
+git log --pretty=oneline $(git rev-list --max-parents=0 HEAD)...v_first_submission
+```
