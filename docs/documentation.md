@@ -1,3 +1,4 @@
+(docs-main)=
 # Documentation
 
 You might think that your research paper should be documentation enough. However there are several reasons to why you should also make documentation as part of your code repository. Just publishing the code itself without any guides on how to run it will make the code more or less useless, unless you are already quite skilled programmer. 
@@ -19,6 +20,6 @@ While you could put all of the documentation in a README file you could also put
 TODO: Write about how to do this
 
 
+(docs-license)=
 ## License
-
 There exists a variety of different licenses. You can read more about choosing a license at https://the-turing-way.netlify.app/reproducible-research/licensing.html
