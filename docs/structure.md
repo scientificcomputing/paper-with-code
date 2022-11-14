@@ -7,7 +7,7 @@ In this document we describe which files you need to have in your repository and
 
 ### `README.md`
 
-One thing you absolutely need is a README file. We also recommend you to write this in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) since this is a relatively simple format to learn, it is simple to read in raw format, it renders nicely on github and since it is pure text it also works great with source control. A REAMDE file should contain the following information
+One thing you absolutely need is a README file. We also recommend you to write this in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) since this is a relatively simple format to learn, it is simple to read in raw format, it renders nicely on github and since it is pure text it also works great with source control. A README file should contain the following information
 
 ```markdown
 # Suitable title, e.g Supplementary code for the paper: Title of paper
@@ -41,10 +41,10 @@ A LICENSE contains information about what people can do with the code in your re
 ## Files we recommend you to have
 
 ### `docs`
-The `docs` folder contains files for building the documentation. See [](docs-main) for more info. 
+The `docs` folder contains files for building the documentation. See [](docs-main) for more info.
 
 ### `.github`
-The `.github` folder is a special folder that contains GitHub specific files such as workflows and issue templates. 
+The `.github` folder is a special folder that contains GitHub specific files such as workflows and issue templates.
 
 An [issue template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) is useful if you want user to submit issues and feedback in a structured manner. For example, you want the user submitting an issue to provide information such as which operating system was used, how was the dependencies installed, what was the expected and actual behavior.
 
@@ -74,12 +74,12 @@ In addition to the `Dockerfile` that contains instructions on how to reproduce t
 A [`.dockerignore`](https://docs.docker.com/engine/reference/builder/#dockerignore-file) is a file containing a list of files that you want Docker to ignore. This is useful if you want to copy everything from the repository into the image but you would like to exclude some files (e.g sensitive data).
 
 ### `.pre-commit-config.yaml`
-This files contains a set of [pre-commit hooks](https://pre-commit.com) that can run every time you commit to the repository. 
+This files contains a set of [pre-commit hooks](https://pre-commit.com) that can run every time you commit to the repository.
 
 
 ## Summary of structure
 
-We recommend that you 
+We recommend that you
 
 ```
 ├── .github
