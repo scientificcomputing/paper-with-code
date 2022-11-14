@@ -1,0 +1,11 @@
+dictionaryDefinitions:
+  - name: paper-with-code
+    path: .cspell_dict.txt
+    addWords: true
+dictionaries:
+  - paper-with-code
+ignoreWords: [
+    tableofcontents,
+    ipynb,
+    oneline
+  ]
