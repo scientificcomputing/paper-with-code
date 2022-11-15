@@ -1,4 +1,4 @@
-(versioning)=
+(versioning-main)=
 # Versioning
 
 When working with a paper it is important to keep track of the history of your projects. For example, you might be introducing some changes that might change the output, and being able to go back to an earlier version is therefore important. Furthermore, if you are more than one person working on a project it would be good to work independently on separate versions and merge your changes into the main branch when ready (of course after a review by someone else in the team)
