@@ -62,7 +62,7 @@ A citation file is nice to have in your repo so that people easily can see how t
 
 
 ### `Dockerfile`
-A [`Dockerfile`](https://docs.docker.com/engine/reference/builder/docker ) is a file containing commands for recreating the environment for running the code. Here you first need to define a base image and then list the commands for installing all the necessary dependencies. If you don't know which base image to use, then [ubuntu](https://hub.docker.com/_/ubuntu) is a good choice. See [](environment) for more information about how to specify a reproducible environment.
+A [`Dockerfile`](https://docs.docker.com/engine/reference/builder/docker ) is a file containing commands for recreating the environment for running the code. Here you first need to define a base image and then list the commands for installing all the necessary dependencies. If you don't know which base image to use, then [ubuntu](https://hub.docker.com/_/ubuntu) is a good choice. See [](environment-main) for more information about how to specify a reproducible environment.
 
 ### `requirements.txt`
 In addition to the `Dockerfile` that contains instructions on how to reproduce the environment, it is good practice to provide the list of dependencies in a language specific file. For Python this can be done using a `requirements.txt` file. Other languages have other types of configuration files (`Cargo.toml` in Rust, `Project.toml` for Julia, `CmakeLists.txt` for C/C++ and so on).

@@ -11,13 +11,9 @@ The documentation should cover at least the following:
 
 First of all, it is nice to get a short high level introduction to what problems are solved in the paper. Second, the actual code you use is probably not documented in the paper itself so there should be some explanation about how a user can run the code and reproduce the results.
 
-TODO: Add some examples
-
 
 ## Hosting your documentation online
-While you could put all of the documentation in a README file you could also put it at a webpage, similar to the page you are reading right now. Once you have a README file it is pretty simple to turn this into a nice looking webpage using [JupyterBook](https://jupyterbook.org) and [GitHub pages](https://pages.github.com).
-
-TODO: Write about how to do this
+While you could put all of the documentation in a README file you could also put it at a webpage, similar to the page you are reading right now. Once you have a README file it is pretty simple to turn this into a nice looking webpage using [JupyterBook](https://jupyterbook.org) and [GitHub pages](https://pages.github.com). You can read more about how to set up Jupyter Book [here](https://scientificcomputing.github.io/reproducibility/part3/documentation.html) and how to publish this book to GitHub pages [here](https://scientificcomputing.github.io/reproducibility/part3/publishing_book.html)
 
 
 (docs-license)=
