@@ -45,7 +45,7 @@ RUN apt-get update && \
 # Upgrade conda
 RUN conda upgrade -y conda
 
-# Copy enviroment file into docker env
+# Copy environment file into docker env
 COPY environment.yml .
 
 # Update environment file with new environment name

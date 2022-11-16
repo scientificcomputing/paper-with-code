@@ -1,3 +1,8 @@
 conda
 postprocess
 Zenodo
+Simula
+fenics
+dolfin
+miniconda
+dockerenv
