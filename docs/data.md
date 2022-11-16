@@ -12,4 +12,4 @@ For example, raw data could be MRI images of the heart, while processed data cou
 
 ## Data repository
 
-I the data you want to share is really small in size (for example a few MB) then you could but the data directly in the repository. Otherwise you should put your data in a proper data repository. We recommend that you use [Zenodo](https://zenodo.org) for this.
+If the data you want to share is really small in size (for example a few MB) then you could put the data directly in the repository. Otherwise you should put your data in a proper data repository. We recommend that you use [Zenodo](https://zenodo.org) for this.
