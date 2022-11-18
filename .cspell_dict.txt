@@ -4,8 +4,8 @@ Zenodo
 Simula
 fenics
 dolfin
-miniconda
 dockerenv
 argparse
 pprint
 pformat
+continuumio
