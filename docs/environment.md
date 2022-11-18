@@ -36,7 +36,7 @@ dependencies:
 We create the following `Dockerfile` to install the conda environment
 ```docker
 # Use Docker image with preinstalled conda
-FROM conda/miniconda3
+FROM continuumio/miniconda3
 
 # Install ssh (missing dependency to run conda envs)
 RUN apt-get update && \
