@@ -1,6 +1,6 @@
 # Setting up your scripts
 
-There are in general two types of scripts in a scientific paper: scripts for creating the figures and tables in the paper, and other scripts. You should strive to make a clear distinction here, especially if your analysis scripts take a long time to run. 
+There are in general two types of scripts in a scientific paper: scripts for creating the figures and tables in the paper, and other scripts. You should strive to make a clear distinction here, especially if your analysis scripts take a long time to run.
 
 ## Scripts for reproducing figures and tables
 These scripts should preferably work with input data from file.
@@ -40,7 +40,7 @@ if __name__ == "__main__":
             arguments = ["-N", f"{n}", "-T", "3.5"]
             if run:
                 arguments.append("--run_code")
-            print("-"*25)
+            print("-"*30)
             print(f"Input arguments {arguments}")
             analysis(arguments)
 

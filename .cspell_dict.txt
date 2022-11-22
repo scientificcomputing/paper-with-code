@@ -9,3 +9,4 @@ argparse
 pprint
 pformat
 continuumio
+miniconda
