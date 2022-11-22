@@ -21,7 +21,7 @@ Here the prefix `v` is meant to represent *version*. You can push that tags to G
 ```
 git push --tags
 ```
-It is good to set up a GitHub action that will build and deploy a [Docker image](environment.md) every time you push a tag to the repository. That way, you will be able to reproduce the environment for all the important versions of your code.
+It is good to set up a [GitHub action](https://scientificcomputing.github.io/reproducibility/part2/github.html#actions) that will build and deploy a [Docker image](environment.md) every time you push a tag to the repository. That way, you will be able to reproduce the environment for all the important versions of your code.
 
 ## Changelog
 It is also good practice to keep track of the changes you make between two version. You can do this by writing a [changelog](https://en.wikipedia.org/wiki/Changelog). You can write a markdown file called `CHANGELOG.md` with the following version

@@ -13,9 +13,9 @@ First of all, it is nice to get a short high level introduction to what problems
 
 
 ## Hosting your documentation online
-While you could put all of the documentation in a README file you could also put it at a webpage, similar to the page you are reading right now. Once you have a README file it is pretty simple to turn this into a nice looking webpage using [JupyterBook](https://jupyterbook.org) and [GitHub pages](https://pages.github.com). You can read more about how to set up Jupyter Book [here](https://scientificcomputing.github.io/reproducibility/part3/documentation.html) and how to publish this book to GitHub pages [here](https://scientificcomputing.github.io/reproducibility/part3/publishing_book.html)
+While you could put all of the documentation in a README file you could also put it at a webpage, similar to the page you are reading right now. Once you have a README file it is pretty simple to turn this into a nice looking webpage using [JupyterBook](https://jupyterbook.org) and [GitHub pages](https://pages.github.com). You can read more about how to set up Jupyter Book [here](https://scientificcomputing.github.io/reproducibility/part3/documentation.html) and how to publish this book to GitHub pages [here](https://scientificcomputing.github.io/reproducibility/part3/publishing_book.html).
 
 
 (docs-license)=
 ## License
-There exists a variety of different licenses. You can read more about choosing a license at https://the-turing-way.netlify.app/reproducible-research/licensing.html
+There exists a variety of different licenses. You can read more about choosing a license at https://the-turing-way.netlify.app/reproducible-research/licensing.html.

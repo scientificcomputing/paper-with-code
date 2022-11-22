@@ -1,25 +1,30 @@
 # Repository structure
 
-In this document we describe which files you need to have in your repository and where we recommend to put them. For easy reference, we have made a template-repo () that you can use as template. Note however that it is difficult to make a guideline that will work in all cases and therefore you might need to adust this guideline to your specific use case.
+In this document we describe which files you need to have in your repository and where we recommend to put them. For easy reference, we have made several example repositories that you can use as template:
+
+- [Example paper](https://github.com/scientificcomputing/example-paper)
+- [Example paper using FEniCS](https://github.com/scientificcomputing/example-paper-fenics)
+
+Note however that it is difficult to make a guideline that will work in all cases and therefore you might need to adust this guideline to your specific use case.
 
 
 ## Files that you absolutely need
 
 ### `README.md`
 
-One thing you absolutely need is a README file. We also recommend you to write this in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) since this is a relatively simple format to learn, it is simple to read in raw format, it renders nicely on github and since it is pure text it also works great with source control. A README file should contain the following information
+One thing you absolutely need is a README file. We also recommend you to write this in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) since this is a relatively simple format to learn, it is simple to read in raw format, it renders nicely on github and since it is pure text it also works great with source control. A README file should contain the following information.
 
 ```markdown
 # Suitable title, e.g Supplementary code for the paper: Title of paper
 
 ## Abstract
-A short paragraph about the paper
+A short paragraph about the paper.
 
 ## Install
-How to install the code or link to docker image
+How to install the code or link to docker image.
 
 ## Reproducing result
-Instructions on how to reproduce the results
+Instructions on how to reproduce the results.
 
 ## Citation
 How to cite the code
@@ -31,10 +36,10 @@ You can also check out <https://readme.so/editor> than contains an interactive e
 This is the folder containing the actual scripts for running simulations and creating figures and tables. How you organize this folder will depend on the project
 
 ### `data`
-This is the folder containing the data you are using in your paper. This folder should also contain a `README.md` file with information about what files are expected to be present in this folder. You might be in a situation where you cannot put the data in the repository, either because the data is too large, or the data is not shareable. In this case the README file should contain information about this. You can read more about data at [](data-main)
+This is the folder containing the data you are using in your paper. This folder should also contain a `README.md` file with information about what files are expected to be present in this folder. You might be in a situation where you cannot put the data in the repository, either because the data is too large, or the data is not shareable. In this case the README file should contain information about this. You can read more about data at [](data-main).
 
 ### `LICENSE`
-A LICENSE contains information about what people can do with the code in your repository. Without a license, no one are allowed to do anything to the code. You can read more about licensing [here](docs-license), and hoe to add a license to your repository [here](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository)
+A LICENSE contains information about what people can do with the code in your repository. Without a license, no one are allowed to do anything to the code. You can read more about licensing [here](docs-license), and how to add a license to your repository [here](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
 
 
 
@@ -58,11 +63,11 @@ Whenever you work with `git` it is good practice to add a `.gitignore` file cont
 
 
 ### `CITATION.cff`
-A citation file is nice to have in your repo so that people easily can see how to cite the repository. You can read more about citation files [here](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
+A citation file is nice to have in your repo so that people easily can see how to cite the repository. You can read more about citation files [here](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files).
 
 
 ### `Dockerfile`
-A [`Dockerfile`](https://docs.docker.com/engine/reference/builder/docker ) is a file containing commands for recreating the environment for running the code. Here you first need to define a base image and then list the commands for installing all the necessary dependencies. If you don't know which base image to use, then [ubuntu](https://hub.docker.com/_/ubuntu) is a good choice. See [](environment-main) for more information about how to specify a reproducible environment.
+A [`Dockerfile`](https://docs.docker.com/engine/reference/builder/docker ) is a file containing commands for recreating the environment for running the code. You first need to define a base image and then list the commands for installing all the necessary dependencies. If you don't know which base image to use, then [ubuntu](https://hub.docker.com/_/ubuntu) is a good choice. See [](environment-main) for more information about how to specify a reproducible environment.
 
 ### `requirements.txt`
 In addition to the `Dockerfile` that contains instructions on how to reproduce the environment, it is good practice to provide the list of dependencies in a language specific file. For Python this can be done using a `requirements.txt` file. Other languages have other types of configuration files (`Cargo.toml` in Rust, `Project.toml` for Julia, `CmakeLists.txt` for C/C++ and so on).
