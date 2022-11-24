@@ -101,6 +101,7 @@ We recommend that you
 ├── LICENSE
 ├── README.md
 ├── code
+│   ├── demo.ipynb
 │   ├── postprocess.py
 │   ├── pre_processing.py
 │   ├── results
@@ -109,15 +110,14 @@ We recommend that you
 ├── data
 │   ├── README.md
 ├── docs
-│   ├── _config.yml
-│   ├── _toc.yml
 │   ├── abstract.md
 │   ├── citation.md
-│   ├── demo.ipynb
-│   ├── index.md
 │   ├── logo.png
 │   ├── refs.bib
 │   └── reproducing.md
+├── _config.yml
+├── _toc.yml
+├── index.md
 ├── requirements-dev.txt
 ├── requirements-docs.txt
 └── requirements.txt
