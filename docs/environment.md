@@ -35,7 +35,7 @@ dependencies:
 
 We create the following `Dockerfile` to install the conda environment
 ```docker
-FROM condaforge/mambaforge 
+FROM condaforge/mambaforge
 
 ENV DEBIAN_FRONTEND=noninteractive
 
