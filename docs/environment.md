@@ -35,26 +35,21 @@ dependencies:
 
 We create the following `Dockerfile` to install the conda environment
 ```docker
-# Use Docker image with preinstalled conda
-FROM continuumio/miniconda3
+FROM condaforge/mambaforge
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Install ssh (missing dependency to run conda envs)
 RUN apt-get update && \
-    apt-get install -y ssh
+    apt-get install -y ssh build-essential
 
-# Upgrade conda
-RUN conda upgrade -y conda
+# Upgrade mamba
+RUN mamba upgrade -y mamba
 
-# Copy environment file into docker env
+# Copy environment and requirements files into docker env
 COPY environment.yml .
 
 # Update environment file with new environment name
-RUN conda env update --file environment.yml --name dockerenv
-
-
-SHELL ["conda", "run", "-n", "dockerenv", "/bin/bash", "-c"]
-
-# Test dolfin
-RUN python3 -c "import dolfin; print(dolfin.__version__)"
-
+RUN mamba env update --file environment.yml --name dockerenv
+SHELL ["mamba", "run", "-n", "dockerenv", "/bin/bash", "-c"]
 ```
