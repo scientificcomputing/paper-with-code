@@ -22,7 +22,7 @@ concurrency:
 
 env:
   # Directory that will be published on github pages
-  PUBLISH_DIR: ./_build/html
+  PUBLISH_DIR: ./docs/_build/html
 
 jobs:
   build:
@@ -41,7 +41,7 @@ jobs:
         run: python3 -m pip install jupyter-book
 
       - name: Build docs
-        run: jupyter book build -W .
+        run: jupyter book build -W docs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
